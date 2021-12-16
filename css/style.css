@@ -15,7 +15,7 @@ html, body{-webkit-font-smoothing: antialiased; font-size: 16px;}
 body{-ms-overflow-style:none; cursor: url('../img/pointer.png'), auto;}
 body::-webkit-scrollbar { display:none; }
 
-h2{font-family: 'Space Mono', monospace;font-size: 8vw;padding-top: 20vh;line-height: 1.2em;padding-left: 10vw; z-index: -1;}
+h2{font-family: 'Space Mono', monospace;font-size: 8vw;padding-top: 20vh;line-height: 1.2em;padding-left: 10vw; /*z-index: -1;*/}
 h2.active{    
 	-webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -127,7 +127,7 @@ h2.active{
 	background-size: cover;
 }
 
-.page5{position: relative;}
+/*.page5{position: relative;}*/
 .page5 div{width: 80vw; margin: auto;}
 .page5 div:nth-child(2){margin-top: 30px;}
 .page5 div:nth-child(2) p{font-size: 32px;color: #888888;}
