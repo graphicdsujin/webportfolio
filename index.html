@@ -225,12 +225,18 @@ This site wants to display the tasks I have done so far and the works I have don
                 let scrollTop = $(window).scrollTop();
                 
                 $(".sec").each(function(index){
-                    //console.log(index);
                     if( scrollTop >= $(".sec").eq(index).offset().top ){
                         $(".sec1_bom .menu li").siblings().removeClass("active").eq(index).addClass("active");
                     };
                 });
             });
+
+            var bodyTop = $("body").height();
+            var footHeight = $(".foot").height();
+
+            alert(bodyTop - footHeight);
+            $(".foot").css("top", bodyTop - footHeight - 40 );
+
             ( function( $ ) {
                 "use strict";
 
