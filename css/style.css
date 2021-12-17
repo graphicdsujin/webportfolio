@@ -132,7 +132,7 @@ h2.active{
 .page5 div:nth-child(2){margin-top: 30px;}
 .page5 div:nth-child(2) p{font-size: 32px;color: #888888;}
 .page5 div:nth-child(2) p:nth-child(1){color: #101010;}
-.page5 .foot{font-weight:normal;margin: auto 10vw;margin: 300px 10vw auto 10vw;padding: 20px 0;border-top: 1px solid #101010;}
+.page5 .foot{font-weight:normal;margin: auto 10vw;margin: 72px 10vw auto 10vw;padding: 20px 0;border-top: 1px solid #101010;}
 .page5 .foot p{font-size: 14px; }
 .page5 .foot p span{font-weight: normal;}
 
