@@ -290,7 +290,7 @@ h2.active{
   .page2 .tle{width: 80vw;float: none;}
   .page2 .cont{float: none;width: 80vw;}
   .page3 div ul li{width: 35vw;}
-  .page3 div ul li p:nth-child(3){min-height: 100px;}
+  .page3 div ul li p:nth-child(3){min-height: 110px;}
   .page4 .card{overflow: inherit;}
   .page4 .card .bg{width: 35vw;height: 35vw;margin-bottom: 4vw;}
 }
