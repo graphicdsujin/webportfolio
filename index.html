@@ -159,7 +159,7 @@ This site wants to display the tasks I have done so far and the works I have don
                 <div>
                     <ul class="card">
                         <li class="bg" data-tilt>
-                            <p></p>
+                            <p><a href="https://www.figma.com/proto/lqrm3UySVmBpexjULoXHXj/Nike?node-id=21%3A14&scaling=min-zoom&page-id=21%3A10" target="_blank"><img src="img/Proj03.jpg"></a></p>
                         </li>
                         <li class="bg">
                             <p><iframe src="https://www.youtube.com/embed/6tasYaoLo8k?mute=1&rel=0&showsearch=0&showinfo=0&autoplay=0&loop=1" title="YouTube video player"  frameborder="0" allowfullscreen></iframe></p>
@@ -209,7 +209,7 @@ This site wants to display the tasks I have done so far and the works I have don
                 </div>
             </div>
 
-             <div class="popup" id="popProj">
+            <div class="popup" id="popProj">
                 <div class="pop-proj">
                     <p class="btn-close"><a href="#"><i class="fas fa-times"></i></a></p>
                     <h3>Project Details</h3>
@@ -241,8 +241,8 @@ This site wants to display the tasks I have done so far and the works I have don
             var s = skrollr.init();
 
             // JavaScript no scroll
-            const body = document.getElementsByTagName('body')[0];
-            body.classList.add('scrollLock');
+            //const body = document.getElementsByTagName('body')[0];
+            //body.classList.add('scrollLock');
 
             $(".link-email").click(function(e){
                 event.preventDefault(); 
@@ -257,7 +257,7 @@ This site wants to display the tasks I have done so far and the works I have don
                 return false;
             });
 
-            $(".card li:nth-child(1)").click(function(e){
+            $(".card li:nth-child(3)").click(function(e){
                 event.preventDefault(); 
                 $("#popProj").removeClass("pop-close").addClass("pop-open");
                 return false;
