@@ -131,7 +131,7 @@ h2.active{
   width: 100%;height: 100%;
 }
 .page4 .card .bg:nth-child(3){
-  background: url('../img/IMG_0418.jpg') center center;
+  background: url('../img/prototype.png') center center;
   background-size: cover;
 }
 
@@ -282,6 +282,8 @@ h2.active{
 }
 
 @media (max-width: 640px){
+  h2{padding-top: 15vh;}
+  .sec p{font-size: 14px;}
   .sec1 .logo p{margin: 40px;width: 30px;}
   .sec1 .sec1_bom .menu {display: none;}
   .sec1 .sec1_bom .menu.active{display: block;}
@@ -289,10 +291,14 @@ h2.active{
   .sec1 .sec1_bom p{display: block;}
   .page2 .tle{width: 80vw;float: none;}
   .page2 .cont{float: none;width: 80vw;}
+  .page3 div ul li p:nth-child(1){width: 50%;}
   .page3 div ul li{width: 35vw;}
-  .page3 div ul li p:nth-child(3){min-height: 110px;}
+  .page3 div ul li p{font-size: 12px;}
+  .page3 div ul li p:nth-child(3){min-height: 130px;}
   .page4 .card{overflow: inherit;}
   .page4 .card .bg{width: 35vw;height: 35vw;margin-bottom: 4vw;}
+  .page5 .info:nth-child(2) p:nth-child(1){font-size: 16px;}
+  .page5 .info:nth-child(2) p{font-size: 14px;}
 }
 
 @media (max-width: 576px){
