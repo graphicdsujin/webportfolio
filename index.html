@@ -40,7 +40,7 @@
     <body scroll="no">
         <section class="sec1">
             <div class="logo">
-                <h1><p><a href="#section2" title="Park Sujin"><img src="img/logo.png"></a></p></h1>
+                <h1><p><a href="../webportfolio/index.html" title="Park Sujin"><img src="img/logo.png"></a></p></h1>
             </div>
             <div class="sec1_bom">
                 <p><a href=""><i class="fas fa-bars"></i></a></p>
@@ -85,7 +85,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="../webportfolio/Blog/post001.html" title="Contact page">
+                        <a href="" title="Blog page">
                             <span>B</span>
                             <span>L</span>
                             <span>O</span>
@@ -284,17 +284,22 @@ This site wants to display the tasks I have done so far and the works I have don
                 let target = $(this);
                 let index = target.index();
                 let offset = index*500;
-                
-                // click menu and direct to the section 클릭 후 다이렉트 이동
-                $("html, body").animate({scrollTop: offset}, 600, "easeInQuint");
-                // target given active 현재 선택자 활성화
-                target.siblings(".menu li").removeClass("active");
-                target.addClass("active");
 
-                section.children("h2").addClass("active");
+                if (index==4) {
+                    location.href='Blog/post001.html';
+                }else{               
+                    // click menu and direct to the section 클릭 후 다이렉트 이동
+                    $("html, body").animate({scrollTop: offset}, 600, "easeInQuint");
+                    // target given active 현재 선택자 활성화
+                    target.siblings(".menu li").removeClass("active");
+                    target.addClass("active");
+
+                    section.children("h2").addClass("active");
+                }
             });
             
             $(".sec1 .sec1_bom p a").click(function(e){
+                
                 $(".sec1 .sec1_bom .menu").toggleClass('active');
                 
                 e.preventDefault();
