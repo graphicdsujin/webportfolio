@@ -113,6 +113,27 @@
                     <p>그러나 어떤식으로 하든 이것은 개발자의 재량이다. 이 모든 것은 프로젝트의 기간이 촉박하거나 개발자의 노력과 서포트가 중요하므로 노력 대비 결과가 많이 달라지지 않는경우, 웹접근성을 중요하게 생각하지 않아도 되는 웹개발일 경우 픽셀로 개발될 수도 있다. 그러나 rem으로 개발할 경우를 대비하여, 웬만한 경우는 4, 8픽셀 단위로 끊어서 디자인하였다.(소수점 계산이 용이함)</p>
                 </div>
             </div>
+            <div class="" data-0="top:0;" >
+                <h2>브레이크 포인트 How to design Breakpoint for Respoinsible Web</h2>
+                <div>
+                    <p>스타트업에 다닐 당시에 나는 프론트엔드 개발자로서 Responsible Web(반응형 웹)을 개발할 때 css로 mediaquery를 이용해 브레이크 포인트를 직접 지정했었다. 그때 당시에는 디자이너가 css에 대해 하나도 몰랐던 상태여서 반응형 웹사이트의 브레이크포인트는 디자이너의 역량이라기 보다는 프론트엔드 개발자의 역량이었다. 이 부분은 css를 모르는 디자이너가 디자인하기에는 한계가 있었다. 그리고 디자인을 아예 모르는 개발자도 브레이크 포인트를 설정하는 기준이나 어떤 식으로 시야의 흐름을 확보하면서 효율적으로 디자인 하는 것이 어려웠다. </p>
+                    <p>사실 모든 사이즈에 맞게 브레이크 포인트를 구글 머터리얼 가이드처럼 세세하게 지정하는 것은 효율성에 대한 문제라던지 한계점이 분명히 있다. 그래서 회사들은 구글처럼 모든 브레이크포인트를 지정해서 디자인이 되어있다기보다는 제일 많이 사용되는 브레이크포인트를 몇개만 뽑아서 각 회사마다 지정해서 사용하는 식이 더 많다. 그러나 그것은 각 회사나 에이전시마다 차이가 있다. </p>
+                    <p>사실 그것은 내가 보는 블로그에 가장 많이 사용되는 브라우저 크기 순, 회사들이 많이 사용하는 순, 가장 작은 단위와 가장 큰 단위를 고려하여 정리를 해 둔 것이 있다. 거기를 보고 참고하였으며 분명히 회사에서 일을 할 때는 그것을 기준으로 디자인 하려고 한다. </p>
+                    <p>그것은 다음과 같다. <br> 
+                    Mobile : 0~599px; <br>
+                    Small Tablet : 600~1023px;<br>
+                    Large Tablet : 1024~1439px;<br>
+                    Desktop : 1440~1920px;
+                    </p>
+                    <p>그러나 내가 포트폴리오에서 사용했던 브레이크포인트는 내 맥북, 아이패드, 아이폰에 맞는 크기로 설정하였다. 이것은 어쨌든 프로토타입을 만들고 결과로 프로토타입 테스트를 하기에 가장 좋은 사이즈를 중심으로 설정했다. </p>
+                    <p>그것은 다음과 같다. <br>
+                        Mobile : [Apple iPhone 12 mini have 5.4"] physical screen size and its resolution is about 1080 x 2340 Pixels with approximately 476 PPI pixel density. Apple iPhone 12 mini has viewport size 360 x 780 Pixels and its pixel ratio is about 3.<br>
+                        Tablet : [Apple iPad Pro 11 (2020)] have 11.0" physical screen size and its resolution is about 1668 x 2388 Pixels with approximately 264 PPI pixel density.<br>
+                        Desktop : [Macbook Pro 2020 13.3-inch] 2560*1600 native resolution at 227 pixels, Viewport Size: 1440px × 900px. 
+                    </p>
+                    <p><img src="../img/Blog001_MyDesktopViewport.png"></p>
+                </div>
+            </div>
 
         </section>
         
