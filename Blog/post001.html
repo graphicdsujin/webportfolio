@@ -111,6 +111,8 @@
                     
                     </p>
                     <p>그러나 어떤식으로 하든 이것은 개발자의 재량이다. 이 모든 것은 프로젝트의 기간이 촉박하거나 개발자의 노력과 서포트가 중요하므로 노력 대비 결과가 많이 달라지지 않는경우, 웹접근성을 중요하게 생각하지 않아도 되는 웹개발일 경우 픽셀로 개발될 수도 있다. 그러나 rem으로 개발할 경우를 대비하여, 웬만한 경우는 4, 8픽셀 단위로 끊어서 디자인하였다.(소수점 계산이 용이함)</p>
+                    <p>소수점으로 끊어지도록 만드는 것은 비단 디자인 뿐만 아니라 개발에서도 중요하다. 만약 디자인 면에서 소수점픽셀로 끊어진다면 그리드가 육안으로 달라져 보이고 만약 이미지를 소수점으로 끊어서 만든다면 화면에 뿌려졌을때 디자인이 블러한 상태로 보여질 수 있다. 특히 픽셀 단위로 끊어서 만들어진 아이콘이나 이미지에서 반드시 지켜져야 할 정도로 중요하다. </p>
+                    <p>개발에서도 반드시 지켜져야 하는데 그 이유는 디자인 패딩을 주었을 때 리스트로 뿌려준 디자인을 그리드 형식으로 나란히 배치했을 때 float속성 등에서 마지막 컬럼이 무너질 수 있다. 그래서 내가 프론트엔드를 다뤘을 때에도 개발자들은 px개발을 선호한다. </p>
                 </div>
             </div>
             <div class="" data-0="top:0;" >
@@ -127,11 +129,11 @@
                     </p>
                     <p>그러나 내가 포트폴리오에서 사용했던 브레이크포인트는 내 맥북, 아이패드, 아이폰에 맞는 크기로 설정하였다. 이것은 어쨌든 프로토타입을 만들고 결과로 프로토타입 테스트를 하기에 가장 좋은 사이즈를 중심으로 설정했다. </p>
                     <p>그것은 다음과 같다. <br>
-                        Mobile : [Apple iPhone 12 mini have 5.4"] physical screen size and its resolution is about 1080 x 2340 Pixels with approximately 476 PPI pixel density. Apple iPhone 12 mini has viewport size 360 x 780 Pixels and its pixel ratio is about 3.<br>
-                        Tablet : [Apple iPad Pro 11 (2020)] have 11.0" physical screen size and its resolution is about 1668 x 2388 Pixels with approximately 264 PPI pixel density.<br>
-                        Desktop : [Macbook Pro 2020 13.3-inch] 2560*1600 native resolution at 227 pixels, Viewport Size: 1440px × 900px. 
+                        Mobile : [Apple iPhone 12 mini have 5.4"] physical screen size and its resolution is about 1080 x 2340 Pixels with approximately 476 PPI pixel density. Apple iPhone 12 mini has viewport size <span>360 x 780 Pixel</span> and its pixel ratio is about 3.<br>
+                        Tablet : [Apple iPad Pro 11 (2020)] have 11.0" physical screen size and its resolution is about 1668 x 2388 Pixels with approximately 264 PPI pixel density. Viewport size <span>834 x 1194 Pixels</span> and its pixel ratio is about 2.0<br>
+                        Desktop : [Macbook Pro 2020 13.3-inch] 2560*1600 native resolution at 227 pixels, Viewport Size: <span>1440px × 900px</span>. 
                     </p>
-                    <p><img src="../img/Blog001_MyDesktopViewport.png"></p>
+                    <p><img src="../img/Blog001_MyDesktopViewport.png" alt="my desktop viewport screenshot"></p>
                 </div>
             </div>
 
