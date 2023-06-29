@@ -20,6 +20,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style_home.css">
 
         <!-- JS -->
         <script src="js/jquery.min_1.12.4.js"></script>
@@ -53,7 +54,7 @@
                             <span>E</span>
                         </a>
                     </li>
-                    <li>
+                    <!--li>
                         <a href="#section3" title="about page">
                             <span>a</span>
                             <span>b</span>
@@ -83,9 +84,9 @@
                             <span>k</span>
                             <span>s</span>
                         </a>
-                    </li>
+                    </li-->
                     <li>
-                        <a href="" title="Blog page">
+                        <a href="Blog/post001.html" title="Blog page">
                             <span>B</span>
                             <span>L</span>
                             <span>O</span>
@@ -93,7 +94,7 @@
                             <span>S</span>
                         </a>
                     </li>
-                    <li>
+                    <!--li>
                         <a href="#section6" title="Contact page">
                             <span>c</span>
                             <span>o</span>
@@ -103,10 +104,19 @@
                             <span>c</span>
                             <span>t</span>
                         </a>
-                    </li>
+                    </li-->
                 </ul>
             </div>
-            <div class="sns">
+            <div class="scrollBtn">
+                <ul>
+                    <li><a href=""><i class="far fa-home"></i></a><span>Home</span></li>
+                    <li><a href=""><i class="far fa-question-circle"></i></a><span>About</span></li>
+                    <li><a href=""><i class="far fa-tools"></i></a><span>Skills</span></li>
+                    <li><a href=""><i class="far fa-gamepad"></i></a><span>Portfolio</span></li>
+                    <li><a href=""><i class="far fa-address-card"></i></a><span>Contact</span></li>
+                </ul>
+            </div>
+            <!--div class="sns">
                 <ul>
                     <li><a href=""><i class="fab fa-instagram"></i></a><span>instagram</span></li>
                     <li><a href=""><i class="fab fa-vimeo-v"></i></a><span>vimeo</span></li>
@@ -114,7 +124,7 @@
                     <li><a href=""><i class="fab fa-dribbble"></i></a><span>dribbble</span></li>
                     <li><a href=""><i class="fab fa-behance"></i></a><span>behance</span></li>
                 </ul>
-            </div>
+            </div-->
             <div class="punchline">
                 <p>UI/UX &#183; GRAPHIC DESIGN &#183; MOTION GRAPHIC</p>
             </div>
@@ -279,25 +289,23 @@ This site wants to display the tasks I have done so far and the works I have don
                 return false;
             });
 
-            $(".sec1_bom .menu li").click(function(e){
+            $(".scrollBtn li").click(function(e){
                 e.preventDefault();
                 let target = $(this);
                 let index = target.index();
                 let offset = index*500;
+         
+                // click menu and direct to the section 클릭 후 다이렉트 이동
+                $("html, body").animate({scrollTop: offset}, 600, "easeInQuint");
+                // target given active 현재 선택자 활성화
+                //target.siblings(".menu li").removeClass("active");
+                //target.addClass("active");
 
-                if (index==4) {
-                    location.href='Blog/post001.html';
-                }else{               
-                    // click menu and direct to the section 클릭 후 다이렉트 이동
-                    $("html, body").animate({scrollTop: offset}, 600, "easeInQuint");
-                    // target given active 현재 선택자 활성화
-                    target.siblings(".menu li").removeClass("active");
-                    target.addClass("active");
-
-                    section.children("h2").addClass("active");
-                }
+                //section.children("h2").addClass("active");
+            
             });
             
+            // mobile toggle menu
             $(".sec1 .sec1_bom p a").click(function(e){
                 
                 $(".sec1 .sec1_bom .menu").toggleClass('active');
