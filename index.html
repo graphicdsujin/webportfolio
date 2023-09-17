@@ -12,6 +12,7 @@
         <!-- webfont -->
         <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/modak" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
@@ -49,46 +50,6 @@
         <![endif]-->
     </head>
     <body scroll="no" >
-        <header class="sticky">
-            <div class="wrap">
-                <div class="logo">
-                    <h1><p><a href="../webportfolio/index.html" title="Park Sujin"><img src="img/logo.png"></a></p></h1>
-                </div>
-                <nav class="sec1_bom">
-                    <p><a href=""><i class="fas fa-bars"></i></a></p>
-                    <ul class="menu">
-                        <li class="active">
-                            <a href="#section2" title="about page">
-                                <span>H</span>
-                                <span>O</span>
-                                <span>M</span>
-                                <span>E</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Portfolio/work001.html" title="My works page">
-                                <span>M</span>
-                                <span>Y</span>
-                                <span>&nbsp;</span>
-                                <span>W</span>
-                                <span>O</span>
-                                <span>R</span>
-                                <span>K</span>
-                                <span>S</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Blog/post001.html" title="Blog page">
-                                <span>B</span>
-                                <span>L</span>
-                                <span>O</span>
-                                <span>G</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
         <section class="sec1">
             <div class="scrollBtn">
                 <ul>
@@ -108,10 +69,61 @@
                     <li><a href=""><i class="fab fa-behance"></i></a><span>behance</span></li>
                 </ul>
             </div-->
-            <div class="punchline">
-                <p>UI/UX &#183; GRAPHIC DESIGN &#183; MOTION GRAPHIC</p>
-            </div>
-            <div id="section2" class="sec page1" data-0="top:0;" >
+            <!--iv id="section2" class="sec page1" data-0="top:0;" -->
+            <div id="section2" class="sec page1" >
+
+                <div class="marquee">
+                    <div class="w-marquee">
+                        <div class="flow-container">
+                            <div class="flow-text">
+                                <div class="flow-wrap">UI/UX &#183; GRAPHIC DESIGN &#183; MOTION GRAPHIC</div>
+                                <div class="flow-wrap">UI/UX &#183; GRAPHIC DESIGN &#183; MOTION GRAPHIC</div>
+                                <div class="flow-wrap">UI/UX &#183; GRAPHIC DESIGN &#183; MOTION GRAPHIC</div>
+                                <div class="flow-wrap">UI/UX &#183; GRAPHIC DESIGN &#183; MOTION GRAPHIC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <header>
+                    <div class="wrap">
+                        <div class="logo">
+                            <h1><p><a href="../webportfolio/index.html" title="Park Sujin"><img src="img/logo.png"></a></p></h1>
+                        </div>
+                        <nav class="sec1_bom">
+                            <!--p><a href=""><i class="fas fa-bars"></i></a></p-->
+                            <ul class="menu">
+                                <li class="active">
+                                    <a href="#section2" title="about page">
+                                        <span>H</span>
+                                        <span>O</span>
+                                        <span>M</span>
+                                        <span>E</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Portfolio/work001.html" title="My works page">
+                                        <span>M</span>
+                                        <span>Y</span>
+                                        <span>&nbsp;</span>
+                                        <span>W</span>
+                                        <span>O</span>
+                                        <span>R</span>
+                                        <span>K</span>
+                                        <span>S</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Blog/post001.html" title="Blog page">
+                                        <span>B</span>
+                                        <span>L</span>
+                                        <span>O</span>
+                                        <span>G</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
                 <canvas id="canvas" width="1440" height="800"></canvas>
                 <script type="module">
 
@@ -133,7 +145,7 @@
                     let light2 = new THREE.PointLight(0x00f13c, 15); //AmbientLight, PointLight, DirectionalLight
                     scene.add(light);
                     scene.add(light2);
-                    
+
                     let loader = new GLTFLoader();
                     loader.load('img/mini_keyboard_minimalist/scene.gltf', function(gltf){
                         scene.add(gltf.scene);
@@ -147,8 +159,22 @@
                     });
 
                 </script>
+
+
+                <div class="marquee bottom">
+                    <div class="w-marquee">
+                        <div class="flow-container">
+                            <div class="flow-text">
+                                <div class="flow-wrap">UI/UX &#183; GRAPHIC DESIGN &#183; MOTION GRAPHIC</div>
+                                <div class="flow-wrap">UI/UX &#183; GRAPHIC DESIGN &#183; MOTION GRAPHIC</div>
+                                <div class="flow-wrap">UI/UX &#183; GRAPHIC DESIGN &#183; MOTION GRAPHIC</div>
+                                <div class="flow-wrap">UI/UX &#183; GRAPHIC DESIGN &#183; MOTION GRAPHIC</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="section3" class="sec page2" data-0="color:rgb(243, 39, 64);top:100%;" data-500="color:rgb(254,255,241);top:0;" >
+            <!--div id="section3" class="sec page2" data-0="color:rgb(243, 39, 64);top:100%;" data-500="color:rgb(254,255,241);top:0;" >
                 
             </div>
             <div id="section4" class="sec page3" data-500="top:100%;" data-1000="top:0;" >
@@ -170,7 +196,7 @@
                     <p><span>Email </span> S3817960@rmit.edu.vn</p>
                     <p><span>Call </span> +84 86 270 6735 / +82 10 9107 8952</p>
                 </div>
-            </div>
+            </div-->
 
             <!-- modify this form HTML and place wherever you want your form / 이메일로 연결하기 위한 폼 -->
             <div class="popup" id="fmEmail">
@@ -303,31 +329,31 @@
             //     }
             //});
 
-            $(window).scroll(function(){
-                var wScroll = $(this).scrollTop();
-                nav.removeClass("active");
+            // $(window).scroll(function(){
+            //     var wScroll = $(this).scrollTop();
+            //     nav.removeClass("active");
                     
-                if(wScroll >= cont.eq(0).offset().top - 80){
-                    nav.removeClass("active");
-                    nav.eq(0).addClass("active");
-                }
-                if(wScroll >= cont.eq(1).offset().top - 80){
-                    nav.removeClass("active");
-                    nav.eq(1).addClass("active");
-                }
-                if(wScroll >= cont.eq(2).offset().top - 110){
-                    nav.removeClass("active");
-                    nav.eq(2).addClass("active");
-                }
-                if(wScroll >= cont.eq(3).offset().top - 80){
-                    nav.removeClass("active");
-                    nav.eq(3).addClass("active");
-                }
-                if(wScroll >= cont.eq(4).offset().top - 80){
-                    nav.removeClass("active");
-                    nav.eq(4).addClass("active");
-                }
-            });
+            //     if(wScroll >= cont.eq(0).offset().top - 80){
+            //         nav.removeClass("active");
+            //         nav.eq(0).addClass("active");
+            //     }
+            //     if(wScroll >= cont.eq(1).offset().top - 80){
+            //         nav.removeClass("active");
+            //         nav.eq(1).addClass("active");
+            //     }
+            //     if(wScroll >= cont.eq(2).offset().top - 110){
+            //         nav.removeClass("active");
+            //         nav.eq(2).addClass("active");
+            //     }
+            //     if(wScroll >= cont.eq(3).offset().top - 80){
+            //         nav.removeClass("active");
+            //         nav.eq(3).addClass("active");
+            //     }
+            //     if(wScroll >= cont.eq(4).offset().top - 80){
+            //         nav.removeClass("active");
+            //         nav.eq(4).addClass("active");
+            //     }
+            // });
 
 
 
