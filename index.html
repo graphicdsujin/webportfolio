@@ -156,9 +156,6 @@
                     //scene.background = new THREE.Color('0xfefff1');
                     let light = new THREE.PointLight(0xfefff1, 20); //AmbientLight, PointLight, DirectionalLight
                     scene.add(light);
-                    let light2 = new THREE.PointLight(0xfefff1, 20); //AmbientLight, PointLight, DirectionalLight
-                    scene.add(light2);
-
                     let loader = new GLTFLoader();
                     loader.load('img/mini_keyboard_minimalist/scene.gltf', function(gltf){
                         scene.add(gltf.scene);
@@ -168,8 +165,9 @@
                             gltf.scene.rotation.y -= 0.001;
                             renderer.render(scene, camera);
                         }
-                        animate();
+                        animate()
                     });
+
                 </script>
             </div>
             <div id="section3" class="sec page2" data-0="color:rgb(243, 39, 64);top:100%;" data-500="color:rgb(254,255,241);top:0;" >
