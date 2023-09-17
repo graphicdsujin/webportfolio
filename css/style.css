@@ -3,17 +3,17 @@
 /* text drag */
 ::-moz-selection { /* Code for Firefox */
   color: #F32740;
-  background: #fefff1;
+  background: #f7fcfa;
 }
 
 ::selection {
   color: #F32740;
-  background: #fefff1;
+  background: #f7fcfa;
 }
 
 html, body{-webkit-font-smoothing: antialiased; font-size: 16px;
-  background: #fefff1;  
-  background: linear-gradient(90deg, #fefff1 21px, transparent 1%) center, linear-gradient(#fefff1 21px, transparent 1%) center, #a799cc;
+  background: #f7fcfa;  
+  background: linear-gradient(90deg, #f7fcfa 21px, transparent 1%) center, linear-gradient(#f7fcfa 21px, transparent 1%) center, #a799cc;
   background-size: 22px 22px;}
 body{-ms-overflow-style:none; cursor: url('../img/pointer.png'), auto;}
 body::-webkit-scrollbar { display:none; }
