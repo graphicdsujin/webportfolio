@@ -140,7 +140,7 @@
                 </script>
                 <script type="module">
 
-                    import {GLTFLoader} from'GLTFLoader';
+                    import {GLTFLoader} from 'GLTFLoader';
                     import * as THREE from 'three';
 
                     let scene = new THREE.Scene();
@@ -154,6 +154,8 @@
                     camera.position.set(0,0,5);
 
                     scene.background = new THREE.Color('white');
+                    let light = new THREE.DirectionalLight(0xffff00, 10);
+                    scene.add(light);
 
                     let loader = new GLTFLoader();
                     loader.load('img/mini_keyboard_minimalist/scene.gltf', function(gltf){
@@ -164,7 +166,7 @@
                             gltf.scene.rotation.y -= 0.1;
                             renderer.render(scene, camera);
                         }
-                        animate();
+                        animate()
                     });
                 </script>
             </div>
