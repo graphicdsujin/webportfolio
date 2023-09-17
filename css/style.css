@@ -2,17 +2,17 @@
 
 /* text drag */
 ::-moz-selection { /* Code for Firefox */
-  color: #F32740;
-  background: #f7fcfa;
+  color: #f7fcfa;
+  background: #00f13c;
 }
 
 ::selection {
-  color: #F32740;
-  background: #f7fcfa;
+  color: #f7fcfa;
+  background: #00f13c;
 }
 
 html, body{-webkit-font-smoothing: antialiased; font-size: 16px;
-  background: #f7fcfa;  
+  background: #f7fcfa;  /* #00f13c */
   background: linear-gradient(90deg, #f7fcfa 21px, transparent 1%) center, linear-gradient(#f7fcfa 21px, transparent 1%) center, #a799cc;
   background-size: 22px 22px;}
 body{-ms-overflow-style:none; cursor: url('../img/pointer.png'), auto;}
