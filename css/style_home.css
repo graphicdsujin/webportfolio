@@ -29,8 +29,8 @@
 .scrollBtn ul li:hover span, .sec1 .scrollBtn ul li:focus span, .sec1 .scrollBtn ul li:active span{ display:block; }
 
 .page1 {}
-.page1 div{display: inline-block; margin-left: 10vw;margin-top: 80px;border: 2px solid #101010;padding: 40px; transition: border-radius ease 0.5s;}
-.page1 canvas{width:100%; height:100%;}
+/* .page1 div{ margin-left: 10vw;margin-top: 80px;padding: 40px; transition: border-radius ease 0.5s;}*/
+.page1 canvas{width:100%; height:100%;} 
 
 /* about section */
 /*.page2{position: relative; z-index: 1;}*/
