@@ -3,16 +3,16 @@
 /* contents */
 #contents {}
 #section1 {height: 100vh;}
-#section2 {background: #fefff1;  
-  background: linear-gradient(90deg, #fefff1 21px, transparent 1%) center, linear-gradient(#fefff1 21px, transparent 1%) center, #a799cc;
+#section2 {background: #f7fcfa;  
+  background: linear-gradient(90deg, #f7fcfa 21px, transparent 1%) center, linear-gradient(#f7fcfa 21px, transparent 1%) center, #a799cc;
   background-size: 22px 22px;}
 #section3 {background: #F32740;background: linear-gradient(90deg, #F32740 21px, transparent 1%) center, linear-gradient(#F32740 21px, transparent 1%) center, #a799cc;
   background-size: 22px 22px;}
-#section4 {background: #fefff1;background: linear-gradient(90deg, #fefff1 21px, transparent 1%) center, linear-gradient(#fefff1 21px, transparent 1%) center, #a799cc;
+#section4 {background: #f7fcfa;background: linear-gradient(90deg, #f7fcfa 21px, transparent 1%) center, linear-gradient(#f7fcfa 21px, transparent 1%) center, #a799cc;
   background-size: 22px 22px;}
 #section5 {background: #F32740;background: linear-gradient(90deg, #F32740 21px, transparent 1%) center, linear-gradient(#F32740 21px, transparent 1%) center, #a799cc;
   background-size: 22px 22px;}
-#section6 {background: #fefff1;background: linear-gradient(90deg, #fefff1 21px, transparent 1%) center, linear-gradient(#fefff1 21px, transparent 1%) center, #a799cc;
+#section6 {background: #f7fcfa;background: linear-gradient(90deg, #f7fcfa 21px, transparent 1%) center, linear-gradient(#f7fcfa 21px, transparent 1%) center, #a799cc;
   background-size: 22px 22px;}
 
 /* section detail */
