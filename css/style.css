@@ -39,6 +39,10 @@ h2.active{
 .txt-r{color: #F32740;}
 
 /* header */
+header{width: 100%;}
+header .wrap{width:100%;max-width:1440px;margin:30px auto;}
+.sticky {position: fixed;top: 0;width: 100%;z-index:999;}
+
 .sec1 .logo{position: fixed; top: 0; z-index: 99;}
 .sec1 .logo p{float: left; margin-top: 40px; margin-left: 80px; width: 40px;}
 .sec1 .sec1_bom{position: fixed; top: 0; right: 0; animation: ease .5s; z-index: 99;}
