@@ -37,11 +37,24 @@ h2.active{
 .scrollLock { overflow: hidden; }
 .txt-r{color: #F32740;}
 
+/* loading */ 
+.loading{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    background:#fff;
+    z-index:1000; /* 이 값으로 레이어의 위치를 조정합니다. */
+}
+
+
 /* header */
 header{width: 100%;}
-header .wrap{width:100%;max-width:1440px;margin:30px auto;overflow: hidden;}
+header .wrap{width:100%;max-width:1280px;margin:0px auto;overflow: hidden;}
 .sticky {position: fixed;top: 0;width: 100%;z-index:999;}
 header .logo{float:left;}
+header .logo p{width:40px;}
 header .wrap nav{float:right;}
 header nav ul li{ display: inline-block; }
 
@@ -77,6 +90,8 @@ header nav ul li{ display: inline-block; }
 .sec1 .sec1_bom p a i{line-height: 33px;}
 */
 
+.folder{width:100%; max-width:1280px; border:1px solid #00f13c;position:relative;margin:0 auto;border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;}
+
 .sec1 .sns{position: fixed; bottom: 0; right: 0;z-index: 99; margin-bottom: 40px; margin-right: 64px;}
 .sec1 .sns ul {}
 .sec1 .sns ul li{margin: 10px; position: relative;}
@@ -99,7 +114,7 @@ header nav ul li{ display: inline-block; }
 .animated-title .track p span{}
 
 .marquee{ padding-top:20px; }
-.marquee.bottom{position:absolute;bottom:20px;}
+.marquee.bottom{position:absolute;bottom:20px;width:100%;}
 .marquee .moving{position:absolute;top:0;left:0;background: #00f13c;width:100%;height:auto;color:#111111; font-family:'Modak', sans-serif; font-size: 20px;}
 
 .flow-container{display: flex;
@@ -108,7 +123,7 @@ header nav ul li{ display: inline-block; }
     overflow: hidden;}
 .flow-text {
     display: flex;
-    background: #00f13c;
+    background: rgba(0,241,60,0.8); 
       flex: 0 0 auto;
       white-space: nowrap;
       overflow: hidden;
@@ -118,15 +133,25 @@ header nav ul li{ display: inline-block; }
       color: #ffffff;
   }
   .flow-text:hover {
-    color: #000;
+    background:none;
+    border-top:2px solid #00f13c;
+    border-bottom:2px solid #00f13c;
+    -webkit-text-stroke: 2px #00f13c;
   }
   .flow-text:hover .flow-wrap {
     animation-play-state: paused;
     cursor: pointer;
   }
+  .flow-text:hover span {
+    color: #00f13c;
+  }
   .flow-wrap {
     animation: textLoop 10s linear infinite;
-    padding-right: 1.4881vw;
+    padding-right: 0.5vw;
+  }
+  .flow-wrap2 {
+    animation: textLoop2 10s linear infinite;
+    padding-right: 0.5vw;
   }
   
   @keyframes textLoop {
@@ -137,6 +162,16 @@ header nav ul li{ display: inline-block; }
     100% {
       -webkit-transform: translate3d(-100%, 0, 0);
       transform: translate3d(-100%, 0, 0);
+    }
+  }
+  @keyframes textLoop2 {
+    0% {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
     }
   }
 
