@@ -153,9 +153,11 @@
                     let camera = new THREE.PerspectiveCamera(30, 1);
                     camera.position.set(0,0,10);
 
-                    scene.background = new THREE.Color('0xfefff1');
-                    let light = new THREE.PointLight(0xfefff1, 10); //AmbientLight, PointLight, DirectionalLight
+                    //scene.background = new THREE.Color('0xfefff1');
+                    let light = new THREE.PointLight(0xfefff1, 20); //AmbientLight, PointLight, DirectionalLight
                     scene.add(light);
+                    let light2 = new THREE.PointLight(0xfefff1, 20); //AmbientLight, PointLight, DirectionalLight
+                    scene.add(light2);
 
                     let loader = new GLTFLoader();
                     loader.load('img/mini_keyboard_minimalist/scene.gltf', function(gltf){
@@ -166,7 +168,7 @@
                             gltf.scene.rotation.y -= 0.001;
                             renderer.render(scene, camera);
                         }
-                        animate()
+                        animate();
                     });
                 </script>
             </div>
