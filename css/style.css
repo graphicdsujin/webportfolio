@@ -50,10 +50,9 @@ h2.active{
     z-index:1000; /* 이 값으로 레이어의 위치를 조정합니다. */
 }
 
-
 /* header */
 header{width: 100%;}
-header .wrap{width:100%;max-width:1280px;margin:30px auto 0;overflow: hidden;}
+header .wrap{width:100%;max-width:1280px;margin:20px auto 0;overflow: hidden;}
 .sticky {position: fixed;top: 0;width: 100%;z-index:999;}
 header .logo{float:right;}
 header .logo p{width:40px;}
@@ -103,6 +102,7 @@ header nav ul li.active a, header nav ul li:hover a,header nav ul li:active a{co
 */
 
 .folder{width:100%; max-width:1280px; min-height:720px; font-size:30px; overflow:hidden;border:1px solid #275833;position:relative;margin:0 auto;border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;border-top-right-radius:30px;}
+.folder h2{font-size: 7vw;}
 
 .sec1 .sns{position: fixed; bottom: 0; right: 0;z-index: 99; margin-bottom: 40px; margin-right: 64px;}
 .sec1 .sns ul {}
@@ -141,6 +141,8 @@ header nav ul li.active a, header nav ul li:hover a,header nav ul li:active a{co
       transition: 0.3s;
       font-size: 4rem;
       font-family:'Modak', sans-serif; 
+      line-height:1em;
+      padding-top:10px;
 
     background:#111;
     color:#111;
@@ -174,6 +176,44 @@ header nav ul li.active a, header nav ul li:hover a,header nav ul li:active a{co
 .flow-text:hover span {
   color: #00f13c;
   -webkit-text-stroke: 0;
+}
+
+
+/* scroll down animation */
+.scroll-downs {
+  position: absolute;
+  top: 250px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  
+  width :34px;
+  height: 55px;
+}
+.mousey {
+  width: 3px;
+  padding: 10px 15px;
+  height: 35px;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  opacity: 0.75;
+  box-sizing: content-box;
+}
+.scroller {
+  width: 3px;
+  height: 10px;
+  border-radius: 25%;
+  background-color: #fff;
+  animation-name: scroll;
+  animation-duration: 2.2s;
+  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+  animation-iteration-count: infinite;
+}
+@keyframes scroll {
+  0% { opacity: 0; }
+  10% { transform: translateY(0); opacity: 1; }
+  100% { transform: translateY(15px); opacity: 0;}
 }
   
   @keyframes textLoop {

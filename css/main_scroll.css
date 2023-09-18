@@ -14,14 +14,12 @@
     display:flex;flex-wrap:wrap;
     justify-content:center;align-items:center;
     top:0;
-    background:salmon;
     font-size:10vw;color:#fff;}
 
 /*  */
 #cont_2{
     top:0%;
     /* top:100%; */
-    background:#fff;
     transition:top 1s;}
 
 #slider{
@@ -30,7 +28,7 @@
     position:absolute;
     height:300px;
     top:calc(50% - 150px); left:10vw;
-    background:#eee;
+    
     transition:transform .3s;}
 
 #slider li{
@@ -72,14 +70,17 @@
     position:absolute;
     left:50%;bottom:10%;
     transform:translateX(-50%);
-    width:80%; height:10px;
-    background:#eee;
-    border:1px solid #ccc;}
+    width:80%; height:4px;
+    background:#111;
+    border:1px solid #275833;
+    border-radius:2px;
+    overflow:hidden;
+}
 
 #indi_bar{
     position:absolute;
     left:0;top:0;
     height:100%;width:100%;
-    background:rgba(0,0,0,.5);
+    background:rgba(2,241,60, 0.5);
     clip-path:polygon(0% 0%, 10px 0%, 10px 100%, 0% 100%);
     transition:all .2s;}

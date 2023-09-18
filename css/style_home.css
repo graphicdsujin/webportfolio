@@ -38,11 +38,14 @@
 .introduce .text01 a{font-size:150px;line-height: 1em;color:#00f13c;text-decoration: underline 1px #00f13c;font-family:"Modak";}
 /*.introduce .img01{position:absolute;top:0;right:0;}*/
 
-/* portfolio sec */
+/* introduce sec */
 .introduce .text01 a {
   display:inline-block;margin-right: 2vw;
   transform-style: preserve-3d;
 }
+
+/* portfolio sec */
+.work01{}
 
 /* about section */
 .imgG{width:200px;position:absolute;top:0;left:0;}
@@ -65,17 +68,17 @@
 .page2 .cont{width: 40vw;float: left;}
 
 /* skills section */
-.page3{text-align: center;}
+/*.page3{text-align: center;}
 .page3 h2{font-size: 7vw;padding-right: 10vw;}
 .page3 div ul{width: 80vw;margin: 60px auto;}
 .page3 div ul li{width: 18vw;float: left; margin-right: 2vw;padding: 2vw 0;}
 .page3 div ul li:nth-child(4){margin-right: 0;}
 .page3 div ul li p{font-size: 14px;font-weight: normal;margin: 0 auto;}
 .page3 div ul li p:nth-child(1){width: 70%;}
-.page3 div ul li h3{font-family: 'Space Mono', monospace; font-size: 16px; font-weight: bold; margin: 10px 0;}
+.page3 div ul li h3{font-family: 'Space Mono', monospace; font-size: 16px; font-weight: bold; margin: 10px 0;}*/
 
 /* portfolio sec */
-.page4 h2{font-size: 7vw;}
+/*.page4 h2{font-size: 7vw;}*/
 .page4 .card{width: 80vw; /*height: 18vw;*/margin: 2vw 10vw auto auto;/*overflow: hidden;*/}
 .page4 .card .bg {
   width: 18vw;height: 18vw;float: left;margin-right: 2vw;
@@ -129,7 +132,7 @@
 .popup .pop-proj .pop-wp-proj .last{margin-bottom: 60px;}
 
 /*.page5{position: relative;}*/
-.page5 h2{font-size: 7vw;}
+/*.page5 h2{font-size: 7vw;}*/
 .page5 .info{width: 80vw; margin: auto;}
 .page5 .info:nth-child(2){margin-top: 30px;}
 .page5 .info:nth-child(2) p{font-size: 28px;color: #888888;}
