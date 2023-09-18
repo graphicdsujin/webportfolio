@@ -10,6 +10,9 @@
         <meta name="keywords" content="assignment">
         <title>Park Sujin</title>
         
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico">
+        
         <!-- webfont -->
         <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
@@ -108,7 +111,7 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="Blog/post001.html" title="Contact page">
+                                    <a href="Contact/Contact.html" title="Contact page">
                                         CONTACT
                                     </a>
                                 </li>
@@ -210,27 +213,6 @@
                 </div>
             </div-->
 
-            <!-- modify this form HTML and place wherever you want your form / 이메일로 연결하기 위한 폼 -->
-            <div class="popup" id="fmEmail">
-                <div class="fm-email">
-                    <p class="btn-close"><a href="#"><i class="fas fa-times"></i></a></p>
-                    <h3>Message Me!</h3>
-                    <p class="fm-txt">Feel free to contact me. If you want to see more projects, give me your <span class="txt-r">Figma account</span> for the access for my projects more. Then I will send you the link via your account.</p>
-                    <form action="https://formspree.io/f/meqnqpgj" method="POST">
-                        <label>
-                            <span>Your email </span>
-                            <input type="email" name="_replyto" placeholder="abc@abc.com">
-                        </label>
-                        <label>
-                            <span>Your message </span>
-                            <textarea name="message" placeholder="If you want to see more projects, add your Figma account."></textarea>
-                        </label>
-                        <!-- your other form fields go here -->
-                        <p><button type="submit">Send</button></p>
-                    </form>
-                </div>
-            </div>
-
             <div class="popup" id="popProj">
                 <div class="pop-proj">
                     <p class="btn-close"><a href="#"><i class="fas fa-times"></i></a></p>
@@ -267,8 +249,8 @@
             var s = skrollr.init();
 
             // JavaScript no scroll
-            const body = document.getElementsByTagName('body')[0];
-            body.classList.add('scrollLock');
+            // const body = document.getElementsByTagName('body')[0];
+            // body.classList.add('scrollLock');
 
             $(".link-email").click(function(e){
                 event.preventDefault(); 
