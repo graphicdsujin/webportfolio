@@ -33,9 +33,9 @@
 /* .page1 div{ margin-left: 10vw;margin-top: 80px;padding: 40px; transition: border-radius ease 0.5s;}*/
 .page1 canvas{width:100%; height:100%;} 
 
-.introduce{margin:3vw 0 3vw 3vw; height:100%;/*background-image: url(../img/keyboard_3d_trn.png);background-position: center right; background-size:100%;*/}
-.introduce .text01{font-weight:300;font-size:100px;line-height: 1em;}
-.introduce .text01 a{font-size:150px;line-height: 1em;color:#00f13c;text-decoration: underline 1px #00f13c;font-family:"Modak";}
+.introduce{padding:4vw; height:100%;min-height:720px;background-image: url(../img/keyboard_3d_trn.png);    background-position: bottom right; background-position-x: 200px;background-size:100%;background-repeat: no-repeat;}
+.introduce .text01{font-weight:500;font-size:100px;line-height: 1.2em;}
+.introduce .text01 a{font-size:150px;line-height: 1em;margin-top:2vw;color:#00f13c;font-family:"Modak";}
 /*.introduce .img01{position:absolute;top:0;right:0;}*/
 
 /* introduce sec */
@@ -43,19 +43,20 @@
   display:inline-block;margin-right: 2vw;
   transform-style: preserve-3d;
 }
-
 /* portfolio sec */
 .work01{}
 
 /* about section */
-.imgG{width:200px;position:absolute;top:0;left:0;}
-.aboutMe h2{font-size:100px;padding:50px;line-height:0.8em;}
+.imgG{width:200px;position:absolute;top:0;left:0;z-index:99;}
+.aboutMe{padding:6vw 4vw;min-height:720px;}
+.aboutMe h2{font-size:100px;line-height:0.8em;margin-bottom:3vw}
 .aboutMe h2 a{font-weight:800;}
 .menu-button{
   display:inline-block;color:#00f13c;margin-right: 2vw;
   transform-style: preserve-3d;
 }
 .menu-button:focus, .menu-button:hover{color:#00f13c;text-decoration:underline 1px solid;}
+.aboutMe p{font-weight:300;font-size:24px;}
 
 /*.page2{position: relative; z-index: 1;}*/
 .page2 div{width: 70vw;margin-top: 10vw;margin-left: 10vw;}
@@ -77,31 +78,10 @@
 .page3 div ul li p:nth-child(1){width: 70%;}
 .page3 div ul li h3{font-family: 'Space Mono', monospace; font-size: 16px; font-weight: bold; margin: 10px 0;}*/
 
-/* portfolio sec */
-/*.page4 h2{font-size: 7vw;}*/
-.page4 .card{width: 80vw; /*height: 18vw;*/margin: 2vw 10vw auto auto;/*overflow: hidden;*/}
-.page4 .card .bg {
-  width: 18vw;height: 18vw;float: left;margin-right: 2vw;
-  transform-style: preserve-3d;
-  z-index: -1;
-  /*background: url('https://images.unsplash.com/photo-1470350576089-539d5a852bf7?dpr=2&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=&bg=');*/
-  background-size: cover;
-  background-position: center;
-}
-.page4 .card .bg p{width: 100%;height: 100%;}
-.page4 .card .bg:nth-child(1){
-  background: url('../img/prototype.png') center center;
-  background-size: cover;
-}
-.page4 .card .bg:nth-child(2) iframe{
-  width: 100%;height: 100%;
-}
-.page4 .card .bg:nth-child(3){
-  background: url('../img/prototype.png') center center;
-  background-size: cover;
-}
-
 /* contact sec */
+.contact{min-height:720px;padding:6vw 4vw;}
+.contact h2{margin-bottom:3vw;}
+
 .popup{display: none;position: fixed; width: 100%;height: 100%; top: 0; left: 0;z-index: 100;background-color: rgba(0,0,0,0.4);}
 .popup .fm-email{position: relative;max-width:600px;margin:10vh auto;background: #fefff1;  
   background: linear-gradient(90deg, #fefff1 21px, transparent 1%) center, linear-gradient(#fefff1 21px, transparent 1%) center, #a799cc;
@@ -121,8 +101,8 @@
 .popup.pop-open{display: block;}
 .popup.pop-close{display: none;}
 
-.popup .pop-proj{position: relative; border: 2px solid #111;margin: 5% auto;max-width: 1000px;height: 80%;max-height: 800px;background: #fefff1;
-  background: linear-gradient(90deg, #fefff1 21px, transparent 1%) center, linear-gradient(#fefff1 21px, transparent 1%) center, #a799cc; 
+.popup .pop-proj{position: relative; border: 1px solid rgba(255,255,255,0.5);overflow:hidden;border-radius:20px;margin: 5% auto;max-width: 1000px;height: 80%;max-height: 800px;background: #111;
+/*  background: linear-gradient(90deg, #fefff1 21px, transparent 1%) center, linear-gradient(#fefff1 21px, transparent 1%) center, #a799cc; */
   background-size: 22px 22px;}
 .popup .pop-proj .pop-wp-proj{overflow: auto;max-height: 742px;height: 90%;}
 .popup .pop-proj .pop-wp-proj::-webkit-scrollbar { display:none; }

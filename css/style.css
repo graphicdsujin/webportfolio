@@ -69,6 +69,13 @@ header nav ul li{ display: block;
 header nav ul li a{display: block; width:90px;height:1em;padding: 25px 40px;color:#07814f;text-align:center;text-decoration:underline solid #111;}
 header nav ul li.active, header nav ul li:hover,header nav ul li:active{top:2px; /*background: #275833;*/ color:#fff;animation: bounce .3s ease alternate;}
 header nav ul li.active a, header nav ul li:hover a,header nav ul li:active a{color:#fff;animation: bounce .3s ease alternate;text-decoration-color: #fff;}
+
+header .logo .sns li{float:left;margin-left:10px;}
+header .logo .sns li a{color:#fff;}
+header .logo .sns li a:hover, 
+header .logo .sns li a:focus{color:rgba(2,240,60,1);}
+header .logo .sns li a span{margin-left:4px;}
+
 /*
 .sec1 .logo{position: fixed; top: 0; z-index: 99;}
 .sec1 .logo p{float: left; margin-top: 40px; margin-left: 80px; width: 40px;}
@@ -101,7 +108,7 @@ header nav ul li.active a, header nav ul li:hover a,header nav ul li:active a{co
 .sec1 .sec1_bom p a i{line-height: 33px;}
 */
 
-.folder{width:100%; max-width:1280px; min-height:720px; font-size:30px; overflow:hidden;border:1px solid #275833;position:relative;margin:0 auto;border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;border-top-right-radius:30px;}
+.folder{width:100%; max-width:1280px; font-size:30px; overflow:hidden;border:1px solid #275833;position:relative;margin:0 auto;border-bottom-left-radius: 30px;border-bottom-right-radius: 30px;border-top-right-radius:30px;}
 .folder h2{font-size: 7vw;}
 
 .sec1 .sns{position: fixed; bottom: 0; right: 0;z-index: 99; margin-bottom: 40px; margin-right: 64px;}
