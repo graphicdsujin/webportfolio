@@ -37,7 +37,7 @@ h2.active{
 
 /* general */
 .scrollLock { overflow: hidden; }
-.txt-r{color: #F32740;}
+.txt-r{color: rgb(2,251,60);}
 
 /* loading */ 
 .loading{
