@@ -45,6 +45,7 @@
 }
 /* portfolio sec */
 .work01{}
+.work01 #slider li img{position:relative;right:calc(50% - 150px);}
 
 /* about section */
 .imgG{width:200px;position:absolute;top:0;left:0;z-index:99;}
