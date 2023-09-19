@@ -155,9 +155,9 @@
                     </article><!-- cont -->
                     <article class="cont" id="cont_2" style="top:100%;">
                         <ul id="slider">
+                            <li><div><img src="../img/proj01.png" /></div><span class="redSpan"></span></li>
                             <li><div><img src="../img/205.png" /></div><span class="redSpan"></span></li>
                             <li><div><img src="../img/1458.png" /></div><span class="redSpan"></span></li>
-                            <li><div><img src="../img/proj01.png" /></div><span class="redSpan"></span></li>
                             <li><div>lorem</div><span class="redSpan"></span></li>
                             <li class="default"><div>Coming Soon</div><span class="redSpan"></span></li>
                             <li class="default"><div>Working On Hard</div><span class="redSpan"></span></li>
@@ -185,7 +185,7 @@
             </div>
         </div>
         
-        <div class="popup" id="popProj">
+        <div class="popup" id="popProj01">
             <div class="pop-proj">
                 <p class="btn-close"><a href="#"><i class="fas fa-times"></i></a></p>
                 <h3>Project Details</h3>
@@ -238,14 +238,23 @@
 
             $("#slider li").click(function(e){
                 event.preventDefault(); 
-                $("#popProj").removeClass("pop-close").addClass("pop-open");
+                var index = $("#slider li").index(this);
+                //alert(index);
+                $(".popup:eq(" + index + ")").removeClass("pop-close").addClass("pop-open");
                 return false;
             });
 
-            $("#popProj .btn-close a").click(function(e){
+            // $("#slider li:eq(1)").click(function(e){
+            //     event.preventDefault(); 
+            //     alert(1);
+            //     $(".popup:eq(1)").removeClass("pop-close").addClass("pop-open");
+            //     return false;
+            // });
+
+            $(".popup .btn-close a").click(function(e){
                 event.preventDefault(); 
                 //alert(1);
-                $("#popProj").removeClass("pop-open").addClass("pop-close");
+                $(".popup").removeClass("pop-open").addClass("pop-close");
                 return false;
             });
 
