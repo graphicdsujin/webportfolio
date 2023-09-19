@@ -84,6 +84,7 @@
 .contact h2{margin-bottom:3vw;
     -webkit-text-stroke: 1px #111;}
 .contact p{
+  background-color:;
     -webkit-text-stroke: 1px #111;}
 .contact a{
     color:rgb(2,251,60);
@@ -119,6 +120,7 @@
 .popup .pop-proj .proj-tt{font-size: 20px;}
 .popup .pop-proj h4 span{font-size: 24px;}
 .popup .pop-proj .pop-wp-proj p{padding: 0px 30px;}
+.popup .pop-proj .pop-wp-proj .pop-proj-img{margin-top:20px;}
 .popup .pop-proj .pop-wp-proj .last{margin-bottom: 60px;}
 
 /*.page5{position: relative;}*/
