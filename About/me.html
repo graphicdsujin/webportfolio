@@ -10,7 +10,7 @@
         <meta name="keywords" content="assignment">
         <title>Park Sujin</title>
         <!-- favicon -->
-        <link rel="icon" type="image/x-icon" href="/img/favicon_io/favicon.ico">
+        <link rel="icon" type="image/x-icon" href="../img/favicon_io/favicon.ico">
         
         <!-- webfont -->
         <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
@@ -57,7 +57,7 @@
 
         <img class="imgG" src="../img/label01.png" />
 
-        <div class="scrollBtn">
+        <!-- <div class="scrollBtn">
             <ul>
                 <li class="active"><a href=""><i class="far fa-home"></i></a><span>Home</span></li>
                 <li><a href=""><i class="far fa-user-secret"></i></a><span>About</span></li>
@@ -65,7 +65,7 @@
                 <li><a href=""><i class="far fa-gamepad"></i></a><span>Portfolio</span></li>
                 <li><a href=""><i class="far fa-address-card"></i></a><span>Contact</span></li>
             </ul>
-        </div>
+        </div> -->
         <!--div class="sns">
             <ul>
                 <li><a href=""><i class="fab fa-instagram"></i></a><span>instagram</span></li>
@@ -128,6 +128,15 @@
                     </nav>
                     <div class="logo">
                         <h1><p><a href="../webportfolio/index.html" title="Park Sujin"><img src="../img/logo01.png"></a></p></h1>
+                        <div class="sns">
+                            <ul>
+                                <li><a href=""><i class="fab fa-instagram"></i><span>instagram</span></a></li>
+                                <li><a href=""><i class="fab fa-vimeo-v"></i><span>vimeo</span></a></li>
+                                <li><a href=""><i class="fab fa-linkedin-in"></i><span>linkedin</span></a></li>
+                                <li><a href=""><i class="fab fa-facebook-f"></i><span>facebook</span></a></li>
+                                <!-- <li><a href=""><i class="fab fa-behance"></i></a><span>behance</span></li> -->
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -311,7 +320,7 @@ This site wants to display the tasks I have done so far and the works I have don
                 $('.imgG').hide();
                 $('a.menu-button').on('mouseenter', function (e) {
                     //alert(e.pageX, e.pageY);
-                    e.preventDefault();
+                    event.stopImmediatePropagation();
 
                     //result.innerHTML+= '<img class="'+'imgG'+'">mouseover</img>';
 
@@ -320,23 +329,24 @@ This site wants to display the tasks I have done so far and the works I have don
                     elem.css( { "left" : e.pageX + "px", "top" : e.pageY + "px" } );
                     elem.fadeIn(500);
                     elem.delay(3000).fadeOut(500);
+                    //elem.delay(3000).fadeOut(500);
                     //elem.fadeToggle(500);
                 });
             });
 
-            ( function( $ ) {
-                "use strict";
+            // ( function( $ ) {
+            //     "use strict";
 
-                $(".aboutMe a").tilt({
-                    maxTilt: 15,
-                    perspective: 1400,
-                    easing: "cubic-bezier(.03,.98,.52,.99)",
-                    speed: 1200,
-                    glare: true,
-                    maxGlare: 0.2,
-                    scale: 1.04
-                });
-            }( jQuery ) );
+            //     $(".aboutMe a").tilt({
+            //         maxTilt: 15,
+            //         perspective: 1400,
+            //         easing: "cubic-bezier(.03,.98,.52,.99)",
+            //         speed: 1200,
+            //         glare: true,
+            //         maxGlare: 0.2,
+            //         scale: 1.04
+            //     });
+            // }( jQuery ) );
         </script>
     </body>
 </html>
