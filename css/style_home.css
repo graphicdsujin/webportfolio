@@ -79,17 +79,25 @@
 .page3 div ul li h3{font-family: 'Space Mono', monospace; font-size: 16px; font-weight: bold; margin: 10px 0;}*/
 
 /* contact sec */
-.contact{min-height:720px;padding:6vw 4vw;}
-.contact h2{margin-bottom:3vw;}
+.contact{min-height:720px;padding:6vw 4vw;background-image: url(../img/duct01.png);background-position: center center; background-size:100%;background-repeat: no-repeat;}
+.contact h2{margin-bottom:3vw;
+    -webkit-text-stroke: 1px #111;}
+.contact p{
+    -webkit-text-stroke: 1px #111;}
+.contact a{
+    color:rgb(2,251,60);
+    -webkit-text-stroke: 1px #111;
+/*    text-decoration: underline 1px solid rgb(2,251,60);}*/
+}
 
 .popup{display: none;position: fixed; width: 100%;height: 100%; top: 0; left: 0;z-index: 100;background-color: rgba(0,0,0,0.4);}
 .popup .fm-email{position: relative;max-width:600px;margin:10vh auto;background: #fefff1;  
   background: linear-gradient(90deg, #fefff1 21px, transparent 1%) center, linear-gradient(#fefff1 21px, transparent 1%) center, #a799cc;
-  background-size: 22px 22px; border: 2px solid #111;}
-.popup .btn-close{position: absolute;top: 0;right: 0;border-left: 2px solid #111;}
-.popup .btn-close a{padding: 6px 18px;display: block;font-size: 30px;}
+  background-size: 22px 22px; border: 1px solid #fff;border-radius:20px;overflow:hidden;}
+.popup .btn-close{position: absolute;top: 0;right: 0;border-left: 1px solid #111;}
+.popup .btn-close a{padding: 6px 18px;display: block;font-size: 32px;}
 .popup form{ padding-bottom:30px; }
-.popup h3{font-family: 'Space Mono', monospace;font-size: 24px;border-bottom:2px solid #111;font-weight: bold;color: #fefff1;background-color: #F32740;padding: 10px 30px;}
+.popup h3{font-size: 24px;border-bottom:1px solid #fff;color: #111;background-color: #fff;padding: 10px 30px;}
 .popup .fm-txt{padding: 30px 20%;font-size: 20px;}
 .popup form label{padding: 0 20% ;font-weight: bold;display: block; margin-bottom: 15px;}
 .popup form label span{display: block;}
@@ -106,8 +114,9 @@
   background-size: 22px 22px;}
 .popup .pop-proj .pop-wp-proj{overflow: auto;max-height: 742px;height: 90%;}
 .popup .pop-proj .pop-wp-proj::-webkit-scrollbar { display:none; }
-.popup .pop-proj h4{font-size: 20px;font-weight: bold;padding: 10px 30px;}
-.popup .pop-proj .proj-tt{font-size: 30px;}
+.popup .pop-proj h4{font-size: 20px;padding: 20px 30px;}
+.popup .pop-proj .proj-tt{font-size: 20px;}
+.popup .pop-proj h4 span{font-size: 24px;}
 .popup .pop-proj .pop-wp-proj p{padding: 0px 30px;}
 .popup .pop-proj .pop-wp-proj .last{margin-bottom: 60px;}
 

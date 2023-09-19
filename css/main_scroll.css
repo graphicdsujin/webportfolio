@@ -38,7 +38,7 @@
     position:relative; overflow:hidden;
     height:100%;
     aspect-ratio:1/1;
-    margin:0 200px 0 0;
+    margin:0 100px;
     transition:transform .2s;}
 
     #slider li:nth-child(2n){top:-30%;}
